@@ -91,8 +91,8 @@ const ProductList = ({ route }) => {
               <h3 className="product-name">{item.name}</h3>
               <p className="item-desc">{item.description}</p>
               <p className="item-price">
-                {typeof item.price === 'number' 
-                  ? item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+                {item.price !== undefined && item.price !== null && !isNaN(Number(item.price))
+                  ? Number(item.price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
                   : 'Preço indisponível'}
               </p>
             </div>
