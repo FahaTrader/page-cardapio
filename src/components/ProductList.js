@@ -84,7 +84,7 @@ const ProductList = ({ route }) => {
             <div className="desc-container">
               <h3 className="product-name">{item.name}</h3>
               <p className="item-desc">{item.description}</p>
-              <p className="item-price">{item.price}</p>
+              <p className="item-price">{item.price.toFixed(2)}</p>
             </div>
           </div>
         ))}
