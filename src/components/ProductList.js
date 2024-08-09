@@ -67,9 +67,15 @@ const ProductList = ({ route }) => {
           className="table-input"
         />
         <button onClick={handleCallWaiter} className="call-waiter-button">
-          {/* SVG para o botão */}
-          <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* SVG paths */}
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor" 
+            width="24" 
+            height="24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m0 0v1a3 3 0 006 0v-1m-6 0h6"/>
           </svg>
         </button>
       </div>
@@ -85,7 +91,9 @@ const ProductList = ({ route }) => {
               <h3 className="product-name">{item.name}</h3>
               <p className="item-desc">{item.description}</p>
               <p className="item-price">
-                {item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+                {typeof item.price === 'number' 
+                  ? item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+                  : 'Preço indisponível'}
               </p>
             </div>
           </div>
