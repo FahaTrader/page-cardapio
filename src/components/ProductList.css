@@ -17,7 +17,7 @@
   background-color: #292929;
   color: #e0e0e0;
   border: 1px solid #424242;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombras leves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 12px;
 }
 
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 240px;
+  width: 320px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #1e1e1e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -47,29 +47,36 @@
 }
 
 .product-image {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 12px;
-  border: 2px solid #ffffff; /* Adiciona uma borda branca ao redor da imagem */
-  background-color: #f0f0f0; /* Fundo para a imagem */
+  margin-right: 16px; /* Espaçamento entre a imagem e a descrição */
+  border: 2px solid #ffffff;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.product-container:hover .product-image {
+  transform: scale(1.1); /* Leve aumento na imagem ao hover */
 }
 
 .desc-container {
-  text-align: center;
+  text-align: left;
+  flex: 1; /* Faz a descrição ocupar o espaço restante */
 }
 
 .product-name {
   font-weight: bold;
   font-size: 18px;
   color: #f5f5f5;
-  margin: 12px 0;
+  margin: 0 0 8px 0;
 }
 
 .item-desc {
   font-size: 14px;
   color: #b0b0b0;
+  margin-bottom: 8px;
 }
 
 .item-price {
@@ -82,7 +89,7 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #ff8800; /* Cor mais vibrante */
+  background-color: #ff8800;
   color: white;
   border: none;
   border-radius: 50%;
