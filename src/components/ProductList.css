@@ -20,7 +20,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 12px;
 }
-
 .table-input{
   width: 100%;
   border-radius: 12px;
@@ -29,6 +28,7 @@
   color: #e0e0e0;
   border: 1px solid #424242;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
 }
 
 .product-list {
@@ -53,7 +53,7 @@
 
 .product-container:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .product-image {
@@ -61,19 +61,19 @@
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
-  margin-right: 16px;
+  margin-right: 16px; /* Espaçamento entre a imagem e a descrição */
   border: 2px solid #ffffff;
   background-color: #f0f0f0;
   transition: transform 0.3s ease;
 }
 
 .product-container:hover .product-image {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Leve aumento na imagem ao hover */
 }
 
 .desc-container {
   text-align: left;
-  flex: 1;
+  flex: 1; /* Faz a descrição ocupar o espaço restante */
 }
 
 .product-name {
@@ -122,23 +122,22 @@
 
 .imgButton{
   width: 180px;
-  margin-top: 18px;
 }
 
 .popUp{
   font-size: 13px;
   position: absolute;
-  top: -5px;
   background-color: #d3cece;
   color: #000;
-  padding-inline: 10px;
+  top: -5px;
+  padding: 1px 10px;
   border: none;
   border-radius: 8px;
-  right: -15px;
-  animation: translate 0.8s alternate infinite;
+  right: -20px;
+  animation: translate 0.8s infinite alternate;
 }
 
-@keyframes translate{
+@keyframes translate {
   from {
     transform: translateY(-5px);
   }

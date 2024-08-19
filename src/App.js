@@ -1,26 +1,16 @@
-// src/App.js
-import React, { useState } from 'react';
-import './App.css';
-import ProductList from './components/ProductList';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
+import ProductList from './components/ProductList';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Home');
-
-  const navigateToProductList = () => {
-    setCurrentPage('ProductList');
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        {currentPage === 'Home' ? (
-          <Home onNavigate={navigateToProductList} />
-        ) : (
-          <ProductList />
-        )}
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product-list" element={<ProductList />} />
+      </Routes>
+    </Router>
   );
 }
 
