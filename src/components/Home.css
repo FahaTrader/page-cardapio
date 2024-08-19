@@ -40,6 +40,10 @@ img {
 
 /* Responsividade */
 @media (max-width: 768px) {
+  .img{
+    max-width: 100%;
+  }
+
   .title {
     font-size: 1.5rem;
   }
@@ -51,6 +55,10 @@ img {
 }
 
 @media (max-width: 480px) {
+  .img{
+    max-width: 100%;
+  }
+
   .title {
     font-size: 1.2rem;
   }
