@@ -10,7 +10,7 @@
   margin-bottom: 24px;
 }
 
-.category-picker {
+.category-picker, .table-input {
   width: 100%;
   padding: 12px;
   border-radius: 12px;
@@ -19,6 +19,7 @@
   border: 1px solid #424242;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 12px;
+<<<<<<< HEAD
 }
 
 .table-input{
@@ -29,6 +30,8 @@
   color: #e0e0e0;
   border: 1px solid #424242;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+=======
+>>>>>>> 50584824042a43d8741f304f890708b95478af6e
 }
 
 .product-list {
@@ -53,7 +56,11 @@
 
 .product-container:hover {
   transform: scale(1.05);
+<<<<<<< HEAD
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+=======
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+>>>>>>> 50584824042a43d8741f304f890708b95478af6e
 }
 
 .product-image {
@@ -61,19 +68,31 @@
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
+<<<<<<< HEAD
   margin-right: 16px;
+=======
+  margin-right: 16px; /* Espaçamento entre a imagem e a descrição */
+>>>>>>> 50584824042a43d8741f304f890708b95478af6e
   border: 2px solid #ffffff;
   background-color: #f0f0f0;
   transition: transform 0.3s ease;
 }
 
 .product-container:hover .product-image {
+<<<<<<< HEAD
   transform: scale(1.1);
+=======
+  transform: scale(1.1); /* Leve aumento na imagem ao hover */
+>>>>>>> 50584824042a43d8741f304f890708b95478af6e
 }
 
 .desc-container {
   text-align: left;
+<<<<<<< HEAD
   flex: 1;
+=======
+  flex: 1; /* Faz a descrição ocupar o espaço restante */
+>>>>>>> 50584824042a43d8741f304f890708b95478af6e
 }
 
 .product-name {
@@ -112,12 +131,16 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+<<<<<<< HEAD
   z-index: 9999;
+=======
+>>>>>>> 50584824042a43d8741f304f890708b95478af6e
 }
 
 .call-waiter-button:hover {
   background-color: #ffa500;
   transform: scale(1.1);
+<<<<<<< HEAD
 }
 
 .imgButton{
@@ -145,4 +168,6 @@
   to{
     transform: translateY(-12px);
   }
+=======
+>>>>>>> 50584824042a43d8741f304f890708b95478af6e
 }
