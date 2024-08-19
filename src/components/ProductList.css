@@ -1,44 +1,54 @@
 .container {
-  padding: 16px;
-  background-color: #1d1d1e;
-  color: white;
+  padding: 20px;
+  background-color: #121212; /* Mudança para um tom mais escuro */
+  color: #e0e0e0; /* Texto cinza claro para suavizar o contraste */
   min-height: 94.9vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
 }
 
 .picker-container {
-  margin-bottom: 16px;
+  margin-bottom: 24px; /* Aumentei o espaço para melhor espaçamento visual */
 }
 
 .category-picker {
   width: 100%;
-  padding: 8px;
-  border-radius: 8px;
-  background-color: #1d1d1e;
-  color: white;
-  border: 1px solid white;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #292929; /* Cor de fundo mais escura para contraste */
+  color: #e0e0e0;
+  border: 1px solid #424242; /* Bordas mais suaves */
 }
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px; /* Aumentei o gap para espaçamento visual mais agradável */
+  justify-content: center; /* Centraliza os itens na tela */
 }
 
 .product-container {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
+  border: 1px solid #424242; /* Cor da borda mais suave */
+  border-radius: 12px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 230px;
+  width: 240px; /* Tamanho ligeiramente maior */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  background-color: #1e1e1e; /* Fundo do produto */
+}
+
+.product-container:hover {
+  transform: scale(1.05); /* Leve zoom ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
 }
 
 .product-image {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
-  margin-bottom: 10px;
+  border-radius: 8px; /* Borda arredondada para um visual mais suave */
+  margin-bottom: 12px;
 }
 
 .desc-container {
@@ -47,43 +57,52 @@
 
 .product-name {
   font-weight: bold;
-  margin: 8px 0;
+  font-size: 18px; /* Tamanho maior para o nome do produto */
+  color: #f5f5f5; /* Cor de destaque para o nome */
+  margin: 12px 0;
 }
 
 .item-desc {
   font-size: 14px;
+  color: #b0b0b0; /* Texto descritivo mais suave */
 }
 
-.item-price{
-  color: #007bff;
+.item-price {
+  color: #ff4081; /* Cor de preço mais vibrante */
   font-weight: bold;
+  font-size: 16px;
 }
 
-.call-waiter-button{
+.call-waiter-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #007bff;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff4081; /* Botão com cor vibrante */
   color: white;
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
+  width: 70px;
+  height: 70px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.table-input{
-  width: 93%;
-  padding: 10px;
-  margin-top: 8px;
-  border-radius: 8px;
-  background-color: transparent;
-  border: 1px solid #FFF;
-  color: #FFF;
+.call-waiter-button:hover {
+  background-color: #e91e63; /* Cor de destaque ao passar o mouse */
+  transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+.table-input {
+  width: 92%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  background-color: #2c2c2c; /* Fundo mais escuro */
+  border: 1px solid #616161; /* Borda mais suave */
+  color: #f5f5f5;
 }
